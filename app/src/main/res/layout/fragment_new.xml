@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".NewFragment">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:id="@+id/textView3"
+                android:layout_margin="10dp"
+                android:layout_gravity="top"
+                android:allowUndo="false"
+                android:textSize="20dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/edTitle"
+                android:hint="Title ?"
+                android:layout_margin="10dp"
+                android:textSize="20dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Place"
+                android:id="@+id/textView5"
+                android:layout_margin="10dp"
+                android:editable="true"
+                android:textSize="20dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edPlace"
+                android:ems="10"
+                android:textSize="20dp"
+                android:hint="Place ?"
+                android:layout_margin="10px" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Details"
+                android:id="@+id/textView12"
+                android:layout_margin="10dp"
+                android:editable="true"
+                android:textSize="20dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edDetails"
+                android:ems="10"
+                android:textSize="20dp"
+                android:hint="Details ?"
+                android:layout_margin="10px" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtDate"
+                android:layout_margin="10dp"
+                android:editable="false"
+                android:textSize="20dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:id="@+id/btnDate"
+                android:layout_gravity="left"
+                android:textSize="16dp"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center|center_vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Location"
+                    android:id="@+id/txtLocation"
+                    android:layout_margin="10dp"
+                    android:editable="false"
+                    android:textSize="20dp" />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Show Map"
+                    android:id="@+id/btnShow"
+                    android:layout_gravity="center"
+                    android:textSize="16dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center|center_vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@mipmap/ic_launcher"
+                    android:id="@+id/imageView"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="10dp"
+                    tools:ignore="ContentDescription" />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Take Picture"
+                    android:id="@+id/btnPicture"
+                    android:layout_gravity="center"
+                    android:textSize="16dp"
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Share"
+                    android:id="@+id/btnShare"
+                    android:layout_gravity="center"
+                    android:textSize="16dp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>
